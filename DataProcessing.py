@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix
 def constructData(uncorrected, corrected):
     uncorrectedData = []
     for fileName in uncorrected:
-        file = open(fileName, "r")
+        file = open("data\\" + fileName, "r")
         reader = csv.reader(file)
 
         data = []
@@ -28,7 +28,7 @@ def constructData(uncorrected, corrected):
 
     correctedData = []
     for fileName in corrected:
-        file = open(fileName, "r")
+        file = open("data\\" + fileName, "r")
         reader = csv.reader(file)
 
         data = []
